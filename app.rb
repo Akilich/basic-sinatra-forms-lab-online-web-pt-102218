@@ -16,4 +16,3 @@ class App < Sinatra::Base
             params[:c]}"
     erb :team 
     end
-  end
