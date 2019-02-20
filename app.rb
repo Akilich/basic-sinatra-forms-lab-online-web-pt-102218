@@ -12,6 +12,6 @@ class App < Sinatra::Base
             "Shooting Gaurd:" params[:sg] 
             "Small Forward:" params[:sf] 
             "Power Forward:" params[:pf]
-            "Center:" params [:c]}"
+            "Center:" params[:c]}"
     erb :team 
     end
