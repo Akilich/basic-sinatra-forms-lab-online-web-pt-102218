@@ -7,12 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/team'
-    "Coach: #{params :coach}"
-    "Point Gaurd: #{params :pg}"
-    "Shooting Gaurd: #{params :sg}"
-    "Small Forward: #{params :sf}"
-    "Power Forward #{params :pf}"
-    "Center: #{params :c}"
+    @team = "Coach: #{params :coach}" "Point Gaurd: #{params :pg}" "Shooting Gaurd: #{params :sg}" "Small Forward: #{params :sf}" "Power Forward #{params :pf}" "Center: #{params :c}"
     erb :team 
   end
 
