@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/team'
-    
     erb :team 
   end
+
 end
