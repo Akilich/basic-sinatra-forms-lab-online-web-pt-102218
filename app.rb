@@ -9,11 +9,11 @@ class App < Sinatra::Base
   post '/team'
     params.to_s
     @team = "#{params[:coach] 
-            "Point Gaurd:" params[:pg]
-            "Shooting Gaurd:" params[:sg] 
-            "Small Forward:" params[:sf] 
-            "Power Forward:" params[:pf]
-            "Center:" params[:c]}"
+            params[:pg]
+            params[:sg] 
+            params[:sf] 
+            params[:pf]
+            params[:c]}"
     erb :team 
     end
   end
