@@ -7,7 +7,8 @@ class App < Sinatra::Base
   end
 
   post '/team'
-  
+    "Coach: #{params :coach}"
+    "Point Gaurd: #{params :pg}"
     erb :team 
   end
 
